@@ -9,11 +9,13 @@ console.log(b);
    //Tên biến không được bắt đầu bằng số và không chứa các kí tự đặc biệt như &, *, (, ).
    //Tên biến không được trùng với từ khóa như var, for, if...
 
-//Can you give 3 different examples of invalid names?--> 3like,aba`kk(),var, let,for,...
+//Can you give 3 different examples of invalid names?--> VD: 3like,aba`kk(),var, let,for,...
 
 //Write a program that calculates the area of a circle. The circle radius is entered by users
+const pi=3.14;
 let r=Number(prompt("R= "));
-console.log("Area = "+r*r*3.14);
+    a=pi*r*r;
+console.log("Area = "+a);
 
 //Write a program that converts Celsius (0C) into Fahrenheit (0F) 
 let c= Number(prompt("Celsius?"));
@@ -22,8 +24,8 @@ console.log(c+"(C) ="+f+"(F)");
 
 //A square
 for (var i=0; i <4; i++) {
-    fd(100)
-    lt(90)
+    fd(100);
+    lt(90);
   }
 }
 
