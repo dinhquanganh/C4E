@@ -20,14 +20,14 @@ console.log("Area = "+a);
 //Write a program that converts Celsius (0C) into Fahrenheit (0F) 
 let c= Number(prompt("Celsius?"));
     f= (c*1.8)+32;
-console.log(c+"(C) ="+f+"(F)");
+    st= `${c}(C) = ${f}(F)`;
+console.log(st);
 
 //A square
 for (var i=0; i <4; i++) {
     fd(100);
     lt(90);
   }
-}
 
 //An equilateral triangle
 rt(30);
