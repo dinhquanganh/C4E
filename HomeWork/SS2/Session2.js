@@ -16,7 +16,7 @@ loại hình hôp khác nhau theo thứ tự được biểu diễn bởi các m
 - Bên trong mỗi điều kiện, có một điều kiện khác. 
 Các điều kiện lồng nhau chỉ có nghĩa là viết các điều kiện của bạn được cấu trúc theo cách này, 
 trái ngược với việc tách chúng thành các câu lệnh riêng biệt hoặc kết hợp chúng thành một.
-- EX: 
+- Ex: 
     let boolean a = true;
         boolean b = false;
  if(a) {
@@ -58,7 +58,20 @@ if (n==0) {
     console.log(`${n}! = ${k}`);    
 }
 
-//
+// 4 tu giac
+for (let i=0; i<4;i++) {
+    lt(120)
+    fd(100)
+    rt(60)
+    fd(100)
+    rt(120)
+    fd(100)
+    rt(60)
+    fd(100)
+    lt(30)
+}
+
+// Da giac long nhau
 lt(30)
 for (let i=0; i<6;i++) {
     fd(100)
@@ -80,18 +93,7 @@ for (let i=0; i<3;i++) {
     rt(120)
 }
 
-//
-for (let i=0; i<4;i++) {
-    lt(120)
-    fd(100)
-    rt(60)
-    fd(100)
-    rt(120)
-    fd(100)
-    rt(60)
-    fd(100)
-    lt(30)
-}
+
 
 
 
