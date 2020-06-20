@@ -50,7 +50,7 @@ if (bmi<18.5) {
 let n= Number(prompt("Nhap so n= ?"));
 let k=1;
 if (n==0) {
-    console.log(`${n}! = 0`);
+    console.log(`${n}! = 1`);
 } else {
     for (let i=1; i<=n; i++) {
         k=k*i;
