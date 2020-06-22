@@ -1,10 +1,5 @@
-const colors= ['blue', 'cyan', 'purple', 'gray', 'red' ];
-let   a=80;
-for (i=0; i<5; i++) {
-    color(colors[i])
-    for (j=0; j<4; j++) {
-        fd(a);
-        rt(90);
-    }
-    a-=20;
-}
+let ip= prompt('Enter the consequence of number, separated by (,)');
+let inputN = [];
+inputN = ip.split(",");
+let min = Math.min(...inputN)
+alert(`The smallest number is ${min}`);
