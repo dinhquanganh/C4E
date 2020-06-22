@@ -1,3 +1,3 @@
-let inputStr = prompt("Enter senquence of names");
+let inputStr = prompt("Enter senquence names");
 let name=inputStr.split(",").map(x=>`<${x}>`);
-alert(`${inputString} => ${name}`);
+alert(`${inputStr} => ${name}`);    
