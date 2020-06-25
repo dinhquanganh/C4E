@@ -1,16 +1,16 @@
 let x = Number(prompt('Enter x=?'));
 let y = Number(prompt('Enter y=?'));
-let arr=[];
+let inputStr=[];
 let j=0;
 for (let i=x; i<=y;i+=2 ){
-    arr[j]=i;
+    inputStr[j]=i;
     j++;
 }
-console.log(arr);
-let sum = arr.reduce(function(a, b) {
+console.log(inputStr);
+let sum = inputStr.reduce(function(a, b) {
     return a + b;
 }, 0);
 
-let num = arr.length;
+let num = inputStr.length;
 let tbc = sum/num;
 console.log(tbc);
