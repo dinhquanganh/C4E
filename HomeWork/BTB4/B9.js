@@ -1,19 +1,15 @@
-let inputStr= Number(prompt('Input number (,)').split(','));
+let inputStr= prompt('Input number (,)').split(',').map(Number);
+console.log(inputStr)
 let repeatN =0;
 let arrN=[];
-let x=0;
-let y=0;
     for(let i=0;i<inputStr.length;i++) {
-        let t= inputStr.filter(x => x === inputStr[i] ).length;
+        let t= inputStr.filter(x => x == inputStr[i]).length;
         if (repeatN< t) {
-            for (j=0; j<arrN.length; j++) {
-                if (inputStr[i]==arrN[j]) {
-                    break;
-                } else {
-                    
-                }
-            }
+            arrN=[];
+            arrN.push(inputStr[i]);
             repeatN=t;
+        } else if (repeatN==t){
+            arrN.push(inputStr[i]);
         }
     }
-        
+console.log(...new Set(arrN));
