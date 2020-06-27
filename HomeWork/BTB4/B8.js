@@ -1,4 +1,4 @@
-let inputStr= Number(prompt('Input number (,)').split(','));
+let inputStr= prompt('Input number (,)').split(',').map(Number);
 let max =0;
 let x=0;
 let y=0;

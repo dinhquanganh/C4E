@@ -8,7 +8,7 @@ let arrN=[];
             arrN=[];
             arrN.push(inputStr[i]);
             repeatN=t;
-        } else if (repeatN==t){
+        } else if (repeatN==t){-
             arrN.push(inputStr[i]);
         }
     }
