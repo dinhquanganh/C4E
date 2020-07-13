@@ -68,3 +68,7 @@
     width: 320px; 
     height: auto;
 }
+
+.nav-item {
+    font-size: 30px;
+}
