@@ -14,7 +14,7 @@ body {
 }
 
 .head {
-    background-color: aquamarine;
+    background-image: linear-gradient(rgb(37, 175, 90), blanchedalmond);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -39,6 +39,7 @@ body {
     margin-bottom: 50px;
     width: 319.44px;
     height: auto;
+    font-family: 'Nanum Gothic';
 
 }
 
