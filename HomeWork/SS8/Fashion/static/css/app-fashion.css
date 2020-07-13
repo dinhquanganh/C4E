@@ -76,3 +76,7 @@
 p.str-mid:hover {
     color: red;
 }
+
+a.nav-item:hover {
+    color:red; 
+}
