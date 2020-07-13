@@ -24,7 +24,6 @@
 }
 .container-mid {
     display: flex;
-    
 }
 
 .container-end {
@@ -38,6 +37,9 @@
     margin-top: 20px;
 }
 
+.content {
+    padding-top: 10px;
+}
 .str-mid {
     padding-top: 10px;
     padding-bottom: 10px;
