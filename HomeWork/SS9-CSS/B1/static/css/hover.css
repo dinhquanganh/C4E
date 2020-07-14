@@ -21,7 +21,7 @@
 }
 
 .all:hover .head{
-    transform: translateX(300px);
+    transform: translateX(-300px);
 }
 
 .content {
@@ -29,8 +29,8 @@
     background-color: red;
     position: absolute;
     top: 20px;
-    left: 300px;
-    width:500px;
+    left: 600px;
+    width: 300px;
     height: 625.597px;
     transition: all 1s linear;
 }
@@ -38,7 +38,10 @@
 .all:hover .content {
     text-align: right;
     top:150px;
-    width:1000px;
+    left:200px;
+    width:1300px;
     height: 400px;
-    padding-left:200px ; 
+    padding-right: 50px;
+    padding-left: 600px;
+    padding-top: 50px;
 }
