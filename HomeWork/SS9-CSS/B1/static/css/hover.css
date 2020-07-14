@@ -33,10 +33,10 @@
     width: 300px;
     height: 625.597px;
     transition: all 1s linear;
+    text-align: right;
 }
 
 .all:hover .content {
-    text-align: right;
     top:150px;
     left:200px;
     width:1300px;
@@ -47,8 +47,8 @@
 }
 
 .title {
-    font-family: 'Merienda One', cursive;
-    padding-bottom: 10px;
+    font-family: 'Pacifico', cursive;
+    padding-bottom: 15px;
 }
 
 .ct {
