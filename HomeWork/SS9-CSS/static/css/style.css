@@ -1,0 +1,175 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: chartreuse;
+    background-size: 100% 100%;
+    width: 100vw;
+    height: 100vh;
+}
+
+.img-1,.img-2,.img-3 {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    background-size: 100% 100%;
+    text-align: center;
+    line-height: 100px;
+    ;
+}
+
+.background {
+    position: absolute;
+    width: 300px;
+    height: 400px;
+    z-index: 2;
+}
+
+.overlay {
+    position: absolute;
+    z-index: 1; 
+}
+.img-1:hover .overlay {
+    background-color: aqua;
+    opacity: 0.4;
+    width: 300px;
+    height: 400px;
+    z-index: 3;
+    transition: all 0.3s linear;
+}
+.img-2:hover .overlay {
+    background-color: aqua;
+    opacity: 0.4;
+    width: 300px;
+    height: 400px;
+    z-index: 3;
+    transition: all 0.3s linear;
+}
+.img-3:hover .overlay {
+    background-color: aqua;
+    opacity: 0.4;
+    width: 300px;
+    height: 400px;
+    z-index: 3;
+    transition: all 0.3s linear;
+}
+
+.content {
+    position: absolute;
+    width: 300px;
+    height: 400px;
+    z-index: 1;
+    
+}
+.img-1:hover .content {
+    color: blue;
+    position: absolute;
+    width: 300px;
+    height: 400px;
+    z-index: 3 ;
+}
+.img-2:hover .content {
+    color: blue;
+    position: absolute;
+    width: 300px;
+    height: 400px;
+    z-index: 3 ;
+}
+.img-3:hover .content {
+    color: blue;
+    position: absolute;
+    width: 300px;
+    height: 400px;
+    z-index: 3 ;
+}
+
+.image{
+    width:300px;
+    height: 400px
+}
+
+.title {
+    background-color: black;
+    width: 300px;
+    height: 50px;
+    border: 2px;
+    border-radius: 10%;
+    text-align: center;
+    line-height: 55px;
+}
+
+.img-1:hover .title {
+    transition: all 0.3s linear;
+    transform: translateY(25px);
+}
+.img-2:hover .title {
+    transition: all 0.3s linear;
+    transform: translateY(25px);
+}
+.img-3:hover .title {
+    transition: all 0.3s linear;
+    transform: translateY(25px);
+}
+
+.text {
+    position: absolute;
+    width:300px;
+    height: 10px;
+    bottom: 95px;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    line-height: 65px;
+}
+.img-1:hover .text {
+    transition: all 0.3s linear;
+    bottom: 260px;
+}
+.img-2:hover .text {
+    transition: all 0.3s linear;
+    bottom: 260px;
+}
+.img-3:hover .text {
+    transition: all 0.3s linear;
+    bottom: 260px;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width:100px;
+    height: 30px;
+    bottom: 30px;
+    color: rgb(231, 36, 36);
+    background-color: black;
+    font-size: 20px;
+    text-align: center;
+    border: 2px;
+    border-radius: 10%;
+    transform: translateX(100px);
+    
+}
+.img-1:hover .button {
+    transition: all 0.3s linear;
+    bottom: 100px;
+}
+.img-2:hover .button {
+    transition: all 0.3s linear;
+    bottom: 100px;
+}
+.img-3:hover .button {
+    transition: all 0.3s linear;
+    bottom: 100px;
+}
+
+
+
