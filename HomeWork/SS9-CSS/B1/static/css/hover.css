@@ -13,11 +13,18 @@
 }
 
 .head {
+    background-image: url(https://images.pexels.com/photos/2437299/pexels-photo-2437299.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    width: 500px;
+    height: 630px;
+    background-size: 100% 100%;
     position: absolute;
     top: 20px;
     left: 600px;
     transition: all 1s linear;
     z-index: 2;
+    border: 0px solid snow;
+    border-radius: 2%;
+    box-shadow: 0 5px 30px 3px rgb(228, 214, 214);
 }
 
 .all:hover .head{
@@ -34,6 +41,8 @@
     height: 625.597px;
     transition: all 1s linear;
     text-align: right;
+    border: 5px solid rgb(235, 101, 101);
+    
 }
 
 .all:hover .content {
@@ -44,6 +53,7 @@
     padding-right: 50px;
     padding-left: 600px;
     padding-top: 50px;
+    border-radius: 50px 5px;
 }
 
 .title {
