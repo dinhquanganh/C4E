@@ -30,7 +30,13 @@ a {
     flex-direction: column;
     margin: 10px 10px;
     font-size: 25px;
+    transition: all 0.8s;
 }
+.icon:hover {
+    color: cadetblue;
+    transition: all 0.8s;
+}
+
 .mid,.small,.img-small{display: flex}
 .mid {
     flex-wrap: wrap;
@@ -43,9 +49,15 @@ a {
 .big {
     height: 60vh;
     margin-bottom: 5vw;
+    transition: all 0.8s;
+}
+.big:hover {
+    color: cadetblue;
+    transition: all 0.8s;
 }
 .image-big {
     height: 54.2vh;
+    border-radius: 10px 10px;
 }
 .small {
     flex-direction: row;
@@ -53,10 +65,16 @@ a {
 }
 .img-small {
     flex-direction: column;
-    width: 33%; 
+    width: 33%;
+    transition: all 0.8s; 
+}
+.img-small:hover {
+    color: cadetblue;
+    transition: all 0.8s;
 }
 .img-small-ma {
     width: 12vw;
+    border-radius: 10px 10px;
 }
 
 .end,.img {display: flex}
@@ -70,12 +88,19 @@ a {
     flex-direction: row;
     margin-bottom: 3vh;
     margin-left: 2vw;
+    transition: all 0.8s linear;
+}
+.img:hover {
+    color: cadetblue;
+    transition: all 0.8s linear;
+    
 }
 .img-end {
     width: 6vw;
     height: auto;
     margin-right: 1vw;
     height: 7.4vh;
+    border-radius: 10px 10px;
 }
 
 @media screen and (max-width: 1440px) {
