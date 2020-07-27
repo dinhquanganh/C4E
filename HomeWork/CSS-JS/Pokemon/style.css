@@ -8,14 +8,16 @@
     display: flex;
     flex-wrap: wrap;
 }
-
+input {
+    margin: 10px 10px;
+}
 .one-pokemon {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    box-shadow: 0 0 1px 1px red;
-    margin: 3px 3px;
+    box-shadow: 0 0 1px 1px rgb(93, 70, 225);
+    margin: 10px 10px;
 }
 
 .pokemon-name {
@@ -23,6 +25,7 @@
 
 }
 
-button {
+.del {
     background-color: khaki;
+    width: 100%;
 }
