@@ -22,7 +22,6 @@
     background-size: 100% 100%;
     text-align: center;
     line-height: 100px;
-    ;
 }
 
 .background {
@@ -107,7 +106,6 @@
 
 
 }
-
 .img-1:hover .title {
     transition: all 0.3s linear;
     transform: translateY(25px);
