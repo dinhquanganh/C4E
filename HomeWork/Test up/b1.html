@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let arr = [16, 32, 72, 96];
+        let newArr=[];
+        function arrPer(x) {
+            let check = false;
+            for (let j = 1; j <= Math.floor(Math.sqrt(x)); j++) {
+                if ((Math.log10(x) / Math.log10(j)) % 1 === 0) {
+                    check = true;
+                    break;
+                }
+            }
+            return check;
+        }
+        for (i=0; i<arr.length; i++) {
+            if (arrPer(arr[i])==true) {
+                newArr.push(arr[i]);
+            }
+        }
+        alert(newArr);
+        
+    </script>
+</body>
+
+</html>

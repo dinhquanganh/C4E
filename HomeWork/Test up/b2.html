@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function add(x) {
+            let sum = x;
+            function resultFn(y) {
+                sum += y;
+                return resultFn;
+            }
+            resultFn.valueOf = function () {
+                return sum;
+            };
+            return resultFn;
+        }
+        alert(add(3,2).valueOf());
+    </script>
+</body>
+
+</html>
