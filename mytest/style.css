@@ -1,0 +1,395 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+a {
+    text-decoration: none;
+}
+section {
+    padding: 100px;
+}
+/* --------------------------------NAV */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: .5s;
+}
+header.sticky {
+    background: #fff;
+    padding: 20px 100px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+header .logo {
+    color: #fff;
+    font-size: 24px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+header.sticky .logo {
+    color: #111;
+}
+header ul {
+    position: relative;
+    display: flex;
+}
+header ul li {
+    position: relative;
+    list-style: none;
+}
+header ul li a{
+    position: relative;
+    display: inline-block;
+    margin: 0 15px;
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+    transition: .5s; 
+    border-radius: 2px;   
+}
+header ul li a:hover, 
+header ul li a:active {
+    transition: .5s;
+    background: yellowgreen;
+}
+header.sticky ul li a{
+    color: #111;
+}
+/* --------------------------------BANNER */
+.banner {
+    position: relative;
+    min-height: 100vh;
+    background: url(./img/person1.jpeg);
+    background-size: cover;
+    background-position: right;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.banner h2 {
+    font-size: 3em;
+    color: #fff;
+    font-weight: 500;
+    line-height: 1.5em;
+}
+.banner h2 span {
+    font-size: 1.5em;
+    font-weight: 700;
+}
+.banner h3 {
+    font-size: 1.5em;
+    color: #fff;
+    font-weight: 500;
+}
+
+.btn {
+    position: relative;
+    background: yellowgreen;
+    display: inline-block;
+    color: #fff;
+    margin-top: 20px;
+    padding: 10px 30px;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-weight: 500;
+    transition: .3s;
+}
+.btn:hover {
+    background-color: rgb(157, 235, 2);
+    transition: .3s;    
+}
+
+/* -------------------------------ABOUT */
+.heading {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #111;
+}
+.heading h2 {
+    font-weight: 600;
+    font-size: 30px;
+}
+.content {
+    display: flex;
+    justify-content: space-between;
+}
+.contentBx {
+    padding-right: 30px;
+}
+.contentBx h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.w50 {
+    min-width: 50%;
+}
+img {
+    max-width: 100%;
+}
+
+/* --------------------------SERVICES */
+.services {
+    background: #111;
+}
+.heading.white {
+    color: #fff;
+}
+.services .content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center; 
+}
+.services .content .servicesBx {
+    padding: 40px 20px;
+    background: #222;
+    color: #fff;
+    max-width: 340px;
+    margin: 20px;
+    text-align: center;
+    transition: .5s;
+}
+.services .content .servicesBx:hover {
+    background: yellowgreen;
+}
+.services .content .servicesBx img{
+    max-width: 80px;
+    filter: invert(1);
+}
+.services .content .servicesBx h2{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/* ----------------------Gallery */
+.gallery .content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+.gallery .content .galleryBx {
+    width: 32%;
+    padding-bottom: 10px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    margin-bottom: 40px;
+}
+.gallery .content .galleryBx img {
+    max-width: 100%;
+}
+.gallery .content .galleryBx .text {
+    text-align: center;
+    max-width: 100%;
+    transition: .3s;
+}
+.gallery .content .galleryBx .text a {
+    color: #111;
+}
+.gallery .content .galleryBx .text:hover, 
+.gallery .content .galleryBx .text a:hover,
+.gallery .content .galleryBx .text a:active {
+    transition: .3s;
+    color: yellowgreen;
+    transform: scale(1.4);
+    
+}
+
+/* --------------------CONTACT */
+.contact {
+    background: #111;
+}
+.formBx {
+    min-width: 60%;
+}
+.formBx form {
+    display: flex;
+    flex-direction: column;
+}
+.formBx form h3, .contactInfo h3 {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.formBx form input, .formBx form textarea {
+    margin-bottom: 20px;
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    background: #222;
+    color: white;
+}
+.formBx form textarea {
+    min-height: 200px;
+    resize: none;
+}
+.formBx form input::placeholder, .formBx form textarea::placeholder {
+    color: #999;
+}
+.formBx form input[type="submit"] {
+    max-width: 100px;
+    background: yellowgreen;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: .3s; 
+}
+.formBx form input[type="submit"]:hover {
+    background-color: rgb(157, 235, 2);
+    transition: .3s;   
+}
+.contactInfo {
+    min-height: 40%;
+}
+.contactInfoBx {
+    position: relative;
+}
+.contactInfoBx .box {
+    display: flex;
+    position: relative;
+    padding: 20px 0;
+}
+.contactInfoBx .box .icon {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-width: 40px;
+    padding-top: 4px;
+    color: #fff;
+    font-size: 24px;
+}
+.contactInfoBx .box .text {
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    margin-left: 20px;
+    font-weight: 300;
+    color: #fff;
+}
+.contactInfoBx .box .text h3 {
+    font-weight: 500;
+    color: yellowgreen;
+    margin-bottom: 0;
+}
+
+/* ------------------------------COPYRIGHT */
+.copyright {
+    background: black;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+
+/* ============================================================================================================== */
+/* ----------------------------------RESPONSIVE------------------------------------------------------------------ */
+/* ============================================================================================================== */
+@media (max-width: 991px) {
+    header, header.sticky {
+        padding: 20px 50px;
+        z-index: 1000;
+    }
+    .menu {
+        position: fixed;
+        top: 80px;
+        right: -100%;
+        display: block;
+        padding: 100px 50px;
+        text-align: center;
+        width: 100%;
+        height: 100vh;
+        background: #fff;
+        transition: .5s;
+        z-index: 999;
+        border-top: 1px solid rgba(0,0,0,0.2);
+    }
+    .menu.active {
+        right: 0;
+    }
+    header ul li a {
+        color: #111;
+        font-size: 24px;
+        margin: 10px;
+    }
+    header ul li a:active {
+        background: yellowgreen;
+    }
+    .toggle {
+        width: 40px;
+        height: 40px;
+        background: url(./img/icon/menu.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 30px;
+        cursor: pointer;
+        transition: 0.2s;
+    }
+    .toggle.active {
+        background: url(./img/icon/close.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 25px;
+        cursor: pointer;
+        transition: 0.2s;
+    }
+    header.sticky .toggle {
+        filter: invert(1);
+    }
+    section {
+        padding: 100px 50px;
+    }
+    .banner {
+        padding: 150px 50px 100px;
+    }
+    .banner h2 {
+        font-size: 1.5em;
+    }
+    .banner h3 {
+        font-size: 1em;
+    }
+    .btn {
+        margin-top: 10px;
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+    .btn:active {
+        background-color: rgb(157, 235, 2);
+    }
+    .heading h2 {
+        font-weight: 24px;
+    } 
+    .content {
+        flex-direction: column;
+    }
+    .contentBx h3 {
+        font-size: 20px;
+    }
+    .w50 {
+        margin-bottom: 20px;
+    }
+    .services .content .servicesBx {
+        margin: 10px
+    }
+    .gallery .content .galleryBx {
+        width: 100%;
+        padding: 0 0 10px 0;
+    }
+}
+
